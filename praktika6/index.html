@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  </head>
+
+
+  <body class="container">
+    
+  <nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">HOTELIS.RU</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Главная</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Услуги</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Бронирование
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Номера</a></li>
+            <li><a class="dropdown-item" href="#">Предложения</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Контакты</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Войти в систему</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">
+        <button class="btn btn-outline-success" type="submit">Поиск</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/hemera-general-05.jpg" class="d-block w-100"   >
+    </div>
+    <div class="carousel-item">
+      <img src="img/hemera-general-07.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="img/hemera-general-11.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Предыдущий</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Следующий</span>
+  </button>
+</div>
+
+
+
+
+
+<div class="row mt-5 mb-5">
+  <div class="col-sm-6" >
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Особое обращение с заголовком</h5>
+        <p class="card-text">С вспомогательным текстом ниже в качестве естественного перехода к дополнительному контенту.</p>
+        <a href="#" class="btn btn-primary">Перейти куда-нибудь</a>
+        <a href="#" class="btn btn-primary">Перейти куда-нибудь</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+      <div class="input-group mb-3">
+  
+    <input type="text" class="form-control" placeholder="Имя" aria-label="Имя">
+ 
+ 
+    <input type="text" class="form-control" placeholder="Фамилия" aria-label="Фамилия">
+  </div>
+  <div class="input-group">
+  <textarea class="form-control" aria-label="С текстовым полем"></textarea> 
+</div>
+<a href="#" class="btn btn-primary mt-2">Перейти</a>  
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Главная</a></li>
+    <li class="breadcrumb-item"><a href="#">Туры</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Горящие туры</li>
+  </ol>
+</nav>
+
+
+
+<div class="row">
+  <div class="col-4">
+    <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
+      <nav class="nav nav-pills flex-column">
+        <a class="nav-link" href="#item-1">Номер Deluxe</a>
+        <nav class="nav nav-pills flex-column">
+          <a class="nav-link ms-3 my-1" href="#item-1-1">Характеристики номера</a>
+         
+        </nav>
+        <a class="nav-link" href="#item-2">Стандартные номера Superior </a>
+        <nav class="nav nav-pills flex-column">
+          <a class="nav-link ms-3 my-1" href="#item-1-2">Характеристики номера</a>
+        <a class="nav-link" href="#item-3">Apollon Suite</a>
+        <nav class="nav nav-pills flex-column">
+          <a class="nav-link ms-3 my-1" href="#item-1-3">Характеристики номера</a>
+        </nav>
+      </nav>
+    </nav>
+  </div>
+
+  <div class="col-8">
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
+      <h1>Номера и резиденции </h1>
+      <div id="item-1">
+              <h4><b>Номер Deluxe</b></h4>
+              <p>
+      Эти номера с частичным видом на море и с видом на сад отеля Barut Hemera, превратившие размещение в ощущение бесконечного удовольствия, оборудованы специально для тех, кто ищет комфортный и энергичный отдых на курорте. Номера площадью 34 м2, предусматривающие размещение до 4 человек максимально (2 взрослых и 2 ребенка), встретят вас стильными элементами декора, наполненными покоем и уютом. В номерах категории «Deluxe», отличающихся волшебными комфортными пространствами, отделанных стильными и современными элементами декора, вы сможете сбросить всю усталость, накопившуюся за год. </p>
+                <img src="img/hemera-rooms-deluxe-standart-01.jpg" width="500px" height="300px">
+      </div>
+      <div id="item-1-1">
+        <p><ul>
+          <h1>Характеристики номера</h1>
+<div class="container text-center">
+  <div class="row justify-content-start">
+    <div class="col-4">
+    <li>Две односпальные кровати и два раскладных дивана (для номеров с видом на сад и море).</li>
+    <li>Одна двуспальная кровать и одна односпальная кровать (в номерах с видом на сад)</li> 
+    <li>Балкон</li>
+    <li>Набор для чая и кофе</li>
+    <li>Фен</li>
+    <li>Сейф</li>
+    
+    </div>
+        <div class="col-4">
+          <li>Электрический чайник</li>
+          <li>Кондиционер</li>
+          <li>Мини-бар</li>
+          <li>Паркет</li>
+          <li>Беспроводной интернет</li>
+          <li>Телефон</li>
+          <li>ТВ</li>
+          <li>Банный халат</li>
+          <li>Тапочки</li>
+          <li>Утюг и гладильная доска</li>
+        </div>
+      </div>
+  </div>
+</ul>
+</p>
+      </div>
+      <div id="item-2">
+                <h4><b>Стандартные номера Superior</b> </h4>
+                <p>
+        Эти номера с частичным видом на море и с видом на окрестности, в которых вы сможете открыть для себя волшебную красоту Средиземноморья, оборудованы особым образом для более комфортного размещения гостей. Номера площадью 32 м2, предусматривающие размещение до 3 человек максимально, подарят вам незабываемый отдых в окружении стильных и минималистичных элементов декора. Выделите время для привилегированного отдыха в наполненной таинственностью и мифологическими сказаниями атмосфере Сиде.
+
+        *В номере Superior, предназначенном для наших гостей с особыми потребностями, где учтены все их возможные нужды, имеются специально оборудованные душ и туалет. Номера для людей с ограниченными возможностями рассчитаны на комфортное размещение максимум 2 человек.</p>
+                  <img src="img/new1.jpg" width="500px" height="300px">
+     <div id="item-1-2">
+        <p><ul>
+          <h1>Характеристики номера</h1>
+<div class="container text-center">
+  <div class="row justify-content-start">
+    <div class="col-4">
+    <li>С частичным видом на море и с видом на окрестности</li>
+    <li>Одна двуспальная кровать + одна односпальная кровать или одна </li> 
+    <li>двуспальная кровать и софа</li>
+    <li>Балкон</li>
+    <li>Набор для чая и кофе</li>
+    <li>Сейф</li>
+    <li>Фен</li>
+    <li>Кондиционер</li>
+    <li>Мини-бар</li>
+    </div>
+    <div class="col-4">
+
+    <li>Специальный душ / туалет</li>
+    <li>Паркет</li>
+    <li>Беспроводной интернет</li>
+    <li>Телефон</li>
+    <li>Паркет</li>
+    <li>Беспроводной интернет</li>
+    <li>Телефон</li>
+    <li>ТВ</li>
+    <li>Банный халат</li>
+    <li>Тапочки</li>
+    <li>Утюг и гладильная доска</li>
+    </div>
+  </div>
+  </div>
+</ul>
+</p>
+      </div>
+      <div id="item-3">
+        <h4><b>Apollon Suite</b></h4>
+        <p>В номерах категории Apollon Suite вас ждет безупречный отдых по концепции «Unlimited-All». Сьют площадью 130 м², отличающийся стильными элементами декора класса люкс, предлагает вам возможность отлично отдохнуть, наслаждаясь привилегиями комфортного размещения. Просторная атмосфера номера, являющегося одним из предпочитаемых среди многочисленных семей, и безупречное обслуживание по концепции «Unlimited-All», позволят вам превратить свой отдых на курорте в удивительное наслаждение класса люкс. </p>
+      </div>
+     <img src="img/hemera-rooms-apollon-suite-01.jpg" width="500px" height="300px">
+     <div id="item-1-3">
+        <p><ul>
+          <h1>Характеристики номера</h1>
+<div class="container text-center">
+  <div class="row justify-content-start">
+    <div class="col-4">
+    <li>С частичным видом на море и с видом на окрестности</li>
+    <li>Одна двуспальная кровать + одна односпальная кровать или одна </li> 
+    <li>двуспальная кровать и софа</li>
+    <li>Балкон</li>
+    <li>Набор для чая и кофе</li>
+    <li>Сейф</li>
+    <li>Фен</li>
+    <li>Кондиционер</li>
+    <li>Мини-бар</li>
+    </div>
+    <div class="col-4">
+
+    <li>Специальный душ / туалет</li>
+    <li>Паркет</li>
+    <li>Беспроводной интернет</li>
+    <li>Телефон</li>
+    <li>Паркет</li>
+    <li>Беспроводной интернет</li>
+    <li>Телефон</li>
+    <li>ТВ</li>
+    <li>Банный халат</li>
+    <li>Тапочки</li>
+    <li>Утюг и гладильная доска</li>
+    </div>
+  </div>
+  </div>
+</ul>
+</p>
+    </div>
+  </div>
+</div>
+</div>
+</nav>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+
+<footer class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <div class="row">
+        <a class="navbar-brand mb-2" href="#">
+      <img src="https://cdn-icons-png.flaticon.com/512/3083/3083741.png" alt="" width="30" height="30" class="d-inline-block align-text-top">
+      HOTELIS.RU</a>
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+            molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
+            aliquam voluptatem veniam, est atque cumque eum delectus sint!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-black">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-black">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-black">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-black">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-0">Links</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!" class="text-black">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-black">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-black">Link 3</a>
+            </li>
+            <li>
+              <form class="d-flex" role="search">
+          <input class="form-control me-2 mt-3" type="search" placeholder="Поиск" aria-label="Search">
+          <button class="btn btn-outline-success mt-3" type="submit">Поиск</button>
+        </form>
+            </li>
+          </ul>
+        </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <button class="btn btn-primary" type="submit">Кнопка</button>
+      </div>
+    </div>
+</footer>
+</html>
+
